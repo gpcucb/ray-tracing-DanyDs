@@ -22,3 +22,9 @@ void Rayo::show(){
 	cout << "Direccion: ";
 	this->direccion.show();
 }
+
+Vector Rayo::direccionRayo(int i, int j, int nx, int ny){
+
+	Vector resp;
+	return resp;
+}

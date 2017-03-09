@@ -33,3 +33,31 @@ Vector Vector::resta(Vector vector){
 void Vector::show(){
 	cout << "X: " << this->x << ", Y: " << this->y << ", Z: " << this->z << endl;
 }
+
+float Vector::modulo(Vector v){
+	float resp;
+	resp = sqrt(pow(v.x,2) + pow(v.y,2) + pow(v.z,2));  
+	return resp;
+}
+
+Vector Vector::prodVectorial(Vector v){
+	Vector resp;
+	resp.x = (this->y * v.z - this->z * v.y);
+	resp.y = (this->z * v.x - this->x * v.z);
+	resp.z = (this->x * v.y - this->y * v.x);
+	return resp;
+}
+float Vector::prodEscalar(Vector v){
+	float i, j, k;
+	i = this->x * v.x;
+	j = this->y * v.y;
+	k = this->z * v.z;
+	return i+j+k;
+}
+
+
+
+
+
+
+
