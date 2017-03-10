@@ -55,6 +55,15 @@ float Vector::prodEscalar(Vector v){
 	return i+j+k;
 }
 
+Vector Vector::prodPorNumero(int num){
+	float i, j, k;	
+	i = this->x * num;
+	j = this->y * num;
+	k = this->z * num;
+	Vector resp(i,j,k);
+	return resp;
+}
+
 
 
 

@@ -23,8 +23,3 @@ void Rayo::show(){
 	this->direccion.show();
 }
 
-Vector Rayo::direccionRayo(int i, int j, int nx, int ny){
-
-	Vector resp;
-	return resp;
-}

@@ -5,11 +5,13 @@ Camara::Camara()
 {
 }
 
-Camara::Camara(Vector e, Vector center, Vector up)
+Camara::Camara(Vector e, Vector center, Vector up, float fov, float df)
 {
 	this->e = e;
 	this->center = center;
 	this->up = up;
+	this->fov = fov;
+	this->df = df;
 }
 
 Camara::~Camara()
@@ -38,4 +40,24 @@ Vector Camara::vectorU(Vector vw){
 
 Vector Camara::vectorV(Vector vw, Vector vu){	
 	return vw.prodVectorial(vu);
+}
+
+Vector Camara::direccionRayo(int i, int j, int nx, int ny){
+	float t, b, r, l;
+	float u,v;
+	Vector dw, uu, vv;	
+
+	t = df * tan(fov/2);
+	b = -t;
+	r = (t * nx)/ny;
+	l = -r;
+	
+	u = l + ((r - l) * (i + 0.5))/nx;
+	v = r + ((t - b) * (i + 0.5))/ny;
+
+	dw = vectorW().prodPorNumero(-df);
+	uu = vectorU(vectorW()).prodPorNumero(u);
+	vv = vectorV(vectorW(),vectorU(vectorW())).prodPorNumero(u);
+
+	return dw.suma(uu).suma(vv);
 }

@@ -26,6 +26,7 @@ public:
 	float modulo(Vector v);
 	Vector prodVectorial(Vector v); 
 	float prodEscalar(Vector v);
+	Vector prodPorNumero(int num);
 };
 
 #endif

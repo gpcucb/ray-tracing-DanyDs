@@ -11,7 +11,7 @@ public:
 	Rayo(Vector posicion, Vector Direccion);
 	~Rayo();
 	void show();
-	Vector direccionRayo(int i, int j, int nx, int ny);
+	
 };
 
 #endif
