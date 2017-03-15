@@ -1,4 +1,0 @@
-﻿  Esfera.cpp
-d:\documentos dany\graficas por computadora\raytracing-danyds\raytracing-danyds\esfera.cpp(25): warning C4244: 'argumento' : conversión de 'int' a 'float'; posible pérdida de datos
-d:\documentos dany\graficas por computadora\raytracing-danyds\raytracing-danyds\esfera.cpp(31): warning C4244: 'argumento' : conversión de 'int' a 'float'; posible pérdida de datos
-  RayTracing-DanyDs.vcxproj -> D:\Documentos Dany\Graficas por computadora\RayTracing-DanyDs\Debug\RayTracing-DanyDs.exe
