@@ -1,3 +1,0 @@
-﻿  RGB.cpp
-MSVCRTD.lib(crtexe.obj) : error LNK2019: símbolo externo _main sin resolver al que se hace referencia en la función ___tmainCRTStartup
-C:\RayTracingGPC\RayTracing\Debug\RayTracing.exe : fatal error LNK1120: 1 externos sin resolver
