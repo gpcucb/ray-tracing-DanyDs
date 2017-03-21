@@ -7,7 +7,20 @@ Raytracer::Raytracer()
 	ny = height;
 
 	/*
+	 e= Vector.new(278,273,-800)
+    center= Vector.new(278,273,-700)
+    up= Vector.new(0,1,0)
+    fov= 39.31
+    df=0.035
+    @camera = Camera.new(e, center, up, fov, df)
 
+    # Sphere values
+    position = Vector.new(370,120,370)
+    radius = 120
+
+    @sphere = Sphere.new(position, radius)
+    @objects=[]
+    @objects << @sphere
 
 	*/
 }
