@@ -10,23 +10,6 @@ class Triangle
     @c = c#vector
     @material = material
   end
-    
-  def isLeft?(n)
-	m = n.module()
-	return n.x/m < 0 && n.y/m < 0 && n.z/m < 0
-  end
-    
-  def normal(p)
-    b_a = @b.minus(@a)
-    c_a = @c.minus(@a)
-
-    normal = b_a.vector_product(c_a)
-    if isLeft?(normal)
-      normal = normal.num_product(-1)
-    end
-    return normal
-  end
-
 
   def determinant(vec_1,vec_2,vec_3)
     a, b, c = vec_1.x, vec_1.y, vec_1.z
@@ -56,5 +39,21 @@ class Triangle
     else
       return Intersection.unsuccessful
     end
+  end
+
+  def isLeft?(n)
+    m = n.mod()
+    return n.x/m < 0 && n.y/m < 0 && n.z/m < 0
+  end
+
+  def normal(p)
+    b_a = @b.minus(@a)
+    c_a = @c.minus(@a)
+
+    normal = b_a.vector_product(c_a)
+    if isLeft?(normal)
+      normal = normal.num_product(-1)
+    end
+    return normal
   end
 end
