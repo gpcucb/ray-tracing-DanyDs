@@ -98,7 +98,7 @@ class RayTracer < Renderer
     sphere6_material = Material.new(s6_diffuse, s6_reflection, s6_specular, s6_power)      
     #finOjoDerecho
       
-      
+    #intento de ceja  
     # Triangle 1 values
     a = Vector.new(550,350,0)
     b = Vector.new(0,300,0)
@@ -108,16 +108,170 @@ class RayTracer < Renderer
     t_reflection = 0.5
     t_power = 60
     t_material = Material.new(t_diffuse, t_reflection, t_specular, t_power)    
+    
+    #nariz
+    position7 = Vector.new(0,-70,150)
+    radius7 = 70
+    s7_diffuse = Rgb.new(1.0,1.0,0.1)
+    s7_specular = Rgb.new(1.0,1.0,1.0)
+    s7_reflection = 0.5
+    s7_power = 100
+    sphere7_material = Material.new(s7_diffuse, s7_reflection, s7_specular, s7_power)
+    
+    position8 = Vector.new(0,-73,149)
+    radius8 = 69
+    s8_diffuse = Rgb.new(1.0,1.0,0.1)
+    s8_specular = Rgb.new(1.0,1.0,1.0)
+    s8_reflection = 0.5
+    s8_power = 100
+    sphere8_material = Material.new(s8_diffuse, s8_reflection, s8_specular, s8_power)
       
-    # Triangle 2 values
-    a2 = Vector.new(500,412,0)
-    b2 = Vector.new(15,305,0)
-    c2 = Vector.new(20,305,1160)    
-    t2_diffuse = Rgb.new(0.142, 0.59, 0.24)
-    t2_specular = Rgb.new(1.0,1.0,1.0)
-    t2_reflection = 0.5
-    t2_power = 60
-    t2_material = Material.new(t2_diffuse, t2_reflection, t2_specular, t2_power)      
+    position9 = Vector.new(0,-76,148)
+    radius9 = 68
+    s9_diffuse = Rgb.new(1.0,1.0,0.1)
+    s9_specular = Rgb.new(1.0,1.0,1.0)
+    s9_reflection = 0.5
+    s9_power = 100
+    sphere9_material = Material.new(s9_diffuse, s9_reflection, s9_specular, s9_power)
+      
+    position10 = Vector.new(0,-79,147)
+    radius10 = 67
+    s10_diffuse = Rgb.new(1.0,1.0,0.1)
+    s10_specular = Rgb.new(1.0,1.0,1.0)
+    s10_reflection = 0.5
+    s10_power = 100
+    sphere10_material = Material.new(s10_diffuse, s10_reflection, s10_specular, s10_power)
+      
+    position11 = Vector.new(0,-82,146)
+    radius11 = 66
+    s11_diffuse = Rgb.new(1.0,1.0,0.1)
+    s11_specular = Rgb.new(1.0,1.0,1.0)
+    s11_reflection = 0.5
+    s11_power = 100
+    sphere11_material = Material.new(s11_diffuse, s11_reflection, s11_specular, s11_power)
+      
+    position12 = Vector.new(0,-85,145)
+    radius12 = 65
+    s12_diffuse = Rgb.new(1.0,1.0,0.1)
+    s12_specular = Rgb.new(1.0,1.0,1.0)
+    s12_reflection = 0.5
+    s12_power = 100
+    sphere12_material = Material.new(s12_diffuse, s12_reflection, s12_specular, s12_power)
+      
+    position13 = Vector.new(0,-88,144)
+    radius13 = 64
+    s13_diffuse = Rgb.new(1.0,1.0,0.1)
+    s13_specular = Rgb.new(1.0,1.0,1.0)
+    s13_reflection = 0.5
+    s13_power = 100
+    sphere13_material = Material.new(s13_diffuse, s13_reflection, s13_specular, s13_power)
+      
+    position14 = Vector.new(0,-91,143)
+    radius14 = 63
+    s14_diffuse = Rgb.new(1.0,1.0,0.1)
+    s14_specular = Rgb.new(1.0,1.0,1.0)
+    s14_reflection = 0.5
+    s14_power = 100
+    sphere14_material = Material.new(s14_diffuse, s14_reflection, s14_specular, s14_power)
+      
+    position15 = Vector.new(0,-94,142)
+    radius15 = 62
+    s15_diffuse = Rgb.new(1.0,1.0,0.1)
+    s15_specular = Rgb.new(1.0,1.0,1.0)
+    s15_reflection = 0.5
+    s15_power = 100
+    sphere15_material = Material.new(s15_diffuse, s15_reflection, s15_specular, s15_power)
+      
+    position16 = Vector.new(0,-97,141)
+    radius16 = 61
+    s16_diffuse = Rgb.new(1.0,1.0,0.1)
+    s16_specular = Rgb.new(1.0,1.0,1.0)
+    s16_reflection = 0.5
+    s16_power = 100
+    sphere16_material = Material.new(s16_diffuse, s16_reflection, s16_specular, s16_power)
+      
+    position17 = Vector.new(0,-100,140)
+    radius17 = 60
+    s17_diffuse = Rgb.new(1.0,1.0,0.1)
+    s17_specular = Rgb.new(1.0,1.0,1.0)
+    s17_reflection = 0.5
+    s17_power = 100
+    sphere17_material = Material.new(s17_diffuse, s17_reflection, s17_specular, s17_power)
+      
+    position18 = Vector.new(0,-103,139)
+    radius18 = 60
+    s18_diffuse = Rgb.new(1.0,1.0,0.1)
+    s18_specular = Rgb.new(1.0,1.0,1.0)
+    s18_reflection = 0.5
+    s18_power = 100
+    sphere18_material = Material.new(s18_diffuse, s18_reflection, s18_specular, s18_power)
+    
+    position19 = Vector.new(0,-106,138)
+    radius19 = 59
+    s19_diffuse = Rgb.new(1.0,1.0,0.1)
+    s19_specular = Rgb.new(1.0,1.0,1.0)
+    s19_reflection = 0.5
+    s19_power = 100
+    sphere19_material = Material.new(s19_diffuse, s19_reflection, s19_specular, s19_power)
+      
+    position20 = Vector.new(0,-109,137)
+    radius20 = 58
+    s20_diffuse = Rgb.new(1.0,1.0,0.1)
+    s20_specular = Rgb.new(1.0,1.0,1.0)
+    s20_reflection = 0.5
+    s20_power = 100
+    sphere20_material = Material.new(s20_diffuse, s20_reflection, s20_specular, s20_power)
+      
+    position21 = Vector.new(0,-112,136)
+    radius21 = 57
+    s21_diffuse = Rgb.new(1.0,1.0,0.1)
+    s21_specular = Rgb.new(1.0,1.0,1.0)
+    s21_reflection = 0.5
+    s21_power = 100
+    sphere21_material = Material.new(s21_diffuse, s21_reflection, s21_specular, s21_power)
+      
+    position22 = Vector.new(0,-115,135)
+    radius22 = 56
+    s22_diffuse = Rgb.new(1.0,1.0,0.1)
+    s22_specular = Rgb.new(1.0,1.0,1.0)
+    s22_reflection = 0.5
+    s22_power = 100
+    sphere22_material = Material.new(s22_diffuse, s22_reflection, s22_specular, s22_power)
+      
+    position23 = Vector.new(0,-118,134)
+    radius23 = 55
+    s23_diffuse = Rgb.new(1.0,1.0,0.1)
+    s23_specular = Rgb.new(1.0,1.0,1.0)
+    s23_reflection = 0.5
+    s23_power = 100
+    sphere23_material = Material.new(s23_diffuse, s23_reflection, s23_specular, s23_power)
+      
+    position24 = Vector.new(0,-121,133)
+    radius24 = 54
+    s24_diffuse = Rgb.new(1.0,1.0,0.1)
+    s24_specular = Rgb.new(1.0,1.0,1.0)
+    s24_reflection = 0.5
+    s24_power = 100
+    sphere24_material = Material.new(s24_diffuse, s24_reflection, s24_specular, s24_power)
+      
+    position25 = Vector.new(0,-124,132)
+    radius25 = 53
+    s25_diffuse = Rgb.new(1.0,1.0,0.1)
+    s25_specular = Rgb.new(1.0,1.0,1.0)
+    s25_reflection = 0.5
+    s25_power = 100
+    sphere25_material = Material.new(s25_diffuse, s25_reflection, s25_specular, s25_power)
+    #finNariz
+      
+    #lunar
+    #lunar_position = Vector.new(550,480,132)
+    #lunar_radius = 200
+    #lunar_s_diffuse = Rgb.new(0.984,0.984,0.145)
+    #lunar_s_specular = Rgb.new(1.0,1.0,1.0)
+    #lunar_s_reflection = 0.5
+    #lunar_s_power = 10
+    #lunar_sphere_material = Material.new(lunar_s_diffuse, lunar_s_reflection, lunar_s_specular, lunar_s_power)            
+    #fin lunar
 
     @sphere = Sphere.new(position, radius, sphere_material)
     @sphere2 = Sphere.new(position2, radius2, sphere2_material)
@@ -125,10 +279,29 @@ class RayTracer < Renderer
     @sphere4 = Sphere.new(position4, radius4, sphere4_material)
     @sphere5 = Sphere.new(position5, radius5, sphere5_material)
     @sphere6 = Sphere.new(position6, radius6, sphere6_material)
-    @triangle = Triangle.new(a, b, c, t_material )
-    @triangle2 = Triangle.new(a2, b2, c2, t2_material)
+    @triangle = Triangle.new(a, b, c, t_material )    
+    @sphere7 = Sphere.new(position7, radius7, sphere7_material)
+    @sphere8 = Sphere.new(position8, radius8, sphere8_material)
+    @sphere9 = Sphere.new(position9, radius9, sphere9_material)
+    @sphere10 = Sphere.new(position10, radius10, sphere10_material)
+    @sphere11 = Sphere.new(position11, radius11, sphere11_material)
+    @sphere12 = Sphere.new(position12, radius12, sphere12_material)
+    @sphere13 = Sphere.new(position13, radius13, sphere13_material)
+    @sphere14 = Sphere.new(position14, radius14, sphere14_material)
+    @sphere15 = Sphere.new(position15, radius15, sphere15_material)
+    @sphere16 = Sphere.new(position16, radius16, sphere16_material)
+    @sphere17 = Sphere.new(position17, radius17, sphere17_material)
+    @sphere18 = Sphere.new(position18, radius18, sphere18_material)
+    @sphere19 = Sphere.new(position19, radius19, sphere19_material)
+    @sphere20 = Sphere.new(position20, radius20, sphere20_material)
+    @sphere21 = Sphere.new(position21, radius21, sphere21_material)
+    @sphere22 = Sphere.new(position22, radius22, sphere22_material)
+    @sphere23 = Sphere.new(position23, radius23, sphere23_material)
+    @sphere24 = Sphere.new(position24, radius24, sphere24_material)
+    @sphere25 = Sphere.new(position25, radius25, sphere25_material)
+    #@lunar = Sphere.new(lunar_position, lunar_radius, lunar_sphere_material)
     @objects=[]
-    @objects << @sphere << @triangle << @sphere2 << @triangle2 << @sphere3 << @sphere4 << @sphere5 << @sphere6
+    @objects << @sphere << @triangle << @sphere2 << @sphere3 << @sphere4 << @sphere5 << @sphere6 << @sphere7 << @sphere8 << @sphere9  << @sphere10 << @sphere11 << @sphere12 << @sphere13 << @sphere14 << @sphere15 << @sphere16 << @sphere17 << @sphere18 << @sphere19 << @sphere20 << @sphere21 << @sphere22 << @sphere23 << @sphere24 << @sphere25 #<< @lunar
    
   end
 
